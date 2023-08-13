@@ -1,13 +1,16 @@
 using System;
+using System.Threading.Tasks;
 
 
 namespace R5T.S0098
 {
     class Program
     {
-        static void Main()
+        static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            //await SolutionGenerationScripts.Instance.In_New_SampleSolutionContext();
+            //await SolutionGenerationScripts.Instance.Create_EmptySolution();
+            await SolutionGenerationScripts.Instance.Create_SampleRazorLibraryWithWebAssemblyClientAndServerSolution();
         }
     }
 }
